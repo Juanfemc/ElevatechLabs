@@ -3,7 +3,6 @@
   --color-secundario: #E8E8E8;
   --color-terciario: #1E1E1E;
   --fuente-principal: "Roboto", sans-serif;
-  ;
 }
 
 * {
@@ -52,7 +51,6 @@
   flex-direction: column;
   gap: 7rem;
   justify-content: center;
-
   text-align: center;
   background-color: var(--color-principal);
   height: 500px;
@@ -65,7 +63,6 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-
 }
 
 .btn-cta {
@@ -130,8 +127,6 @@ h2 {
   grid-template-columns: auto auto auto;
   padding: 2rem 0;
 }
-
-
 
 .card-servicio,
 .card-comotrabajamos,
@@ -242,7 +237,6 @@ h2 {
   grid-template-rows: auto auto;
   gap: 3rem;
   text-align: start;
-
 }
 
 .contenedor-contactanos {
@@ -265,7 +259,6 @@ h2 {
 
 .contenido-mensaje button {
   display: inline-block;
-
 }
 
 .form-group {
@@ -280,7 +273,15 @@ h2 {
   background-color: var(--color-secundario);
   border: none;
   border-radius: 5px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  outline: none;
+}
 
+.formulario input:focus,
+.formulario textarea:focus {
+  border: 2px solid var(--color-principal);
+  background-color: #fff;
 }
 
 .formulario textarea {
@@ -337,16 +338,35 @@ h2 {
   color: #fff;
 }
 
-/* .linea {
-  position: absolute;
-  top: 50%;
-  right: -65px;
-  width: 5rem;
-  height: 20px;
-  border-top: 1rem solid #007bff;
-  transform: translateY(-50%);
-  z-index: -1;
-} */
+/* ====== 📱 TELÉFONO CON BANDERA (intl-tel-input) ====== */
+.iti {
+  width: 100%;
+}
+
+.iti input {
+  width: 100%;
+  height: 3rem;
+  padding: 0.8rem 1rem 0.8rem 4rem; /* espacio para la bandera */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-secundario);
+  outline: none;
+}
+
+.iti input:focus {
+  border: 2px solid var(--color-principal);
+  background-color: #fff;
+}
+
+.iti__flag-container {
+  margin-left: 0.5rem;
+}
+
+.iti__selected-flag {
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+}
 
 /* Tablets */
 @media (max-width: 1023px) {
@@ -354,10 +374,10 @@ h2 {
     display: block;
   }
 
-  h2{
+  h2 {
     font-size: 2rem;
-
   }
+
   .navbar-social,
   .navbar-menu {
     display: none;
@@ -374,21 +394,15 @@ h2 {
 
   .contenedor-footer {
     justify-content: center;
-
   }
 
-  .contenedor-footer .navbar-social .social{
+  .contenedor-footer .navbar-social .social {
     display: block;
   }
-
-
 }
 
 /* CELULARES */
-
 @media (max-width: 767px) {
-
-
   .contenedor-servicios,
   .contenedor-comotrabajamos,
   .contenedor-proyectos,
