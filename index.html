@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elevatech Labs</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +28,7 @@
             <div class="navbar-menu">
                 <ul class="navbar-items">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="section-servicios">Servicios</a></li>
                     <li><a href="#">¿Cómo trabajamos?</a></li>
                     <li><a href="#">Proyectos</a></li>
                     <li><a href="#">Contáctanos</a></li>
@@ -261,7 +267,8 @@
         <section class="contactanos">
             <h2>Contáctanos</h2>
             <div class="contenedor-contactanos">
-                <form class="formulario" action="#" method="post">
+                <form class="formulario" action="https://formspree.io/f/xblanbzd" method="POST">
+
                     <div class="datos-personales">
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
@@ -275,9 +282,10 @@
 
                         <div class="form-group">
                             <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono">
+                            <input id="telefono" type="tel" name="telefono">
                         </div>
                     </div>
+
                     <div class="contenido-mensaje">
                         <div class="form-group">
                             <label for="mensaje">Mensaje</label>
@@ -289,8 +297,8 @@
                     </div>
                 </form>
             </div>
-            </div>
         </section>
+
     </main>
     <foote class="footer">
         <div class="contenedor-footer">
@@ -323,7 +331,10 @@
         <div class="text-cpr">
             <span class="copyrigth">© 2025 ElevaTech Labs. Todos los derechos reservados.</span>
         </div>
-    </footer>
+        </footer>
+
+        <script src="script.js"></script>
+
 </body>
 
 </html>
